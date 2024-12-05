@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+
+}
+.card-img-top{
+    height: 20rem; 
+    object-fit: cover;
+    border-radius: 5px;
+}
+.card-container {
+    justify-content: center; 
+    gap: 1rem; 
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 1rem); 
+    }
+}
+
+/* For mobile devices (1 card per row) */
+@media (max-width: 576px) {
+    .card {
+        flex: 1 1 100%; 
+    }
+}
